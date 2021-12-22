@@ -1,0 +1,15 @@
+:root {
+  --page-bg-color: #ffffff;
+  --img-bg-color: #eeeeee;
+  --footer-color: #2f303a;
+  --color-of-headers: #212121;
+  --text-color: #757575;
+  --accent-color: #2196f3;
+  --logo-color: #2196f3;
+  --card-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+body {
+  font-family: 'Roboto', 'Raleway', sans-serif;
+}
