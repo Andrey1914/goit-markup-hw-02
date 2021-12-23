@@ -14,3 +14,41 @@ body {
   font-family: 'Roboto', 'Raleway', sans-serif;
   color: var(--color-of-headers);
 }
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-header a {
+  text-decoration: none;
+}
+
+.site-nav,
+.contact,
+.logo {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-nav > li {
+  margin-left: 50px;
+}
+
+.contact > li {
+  margin-left: 50px;
+}
+
+.site-nav a {
+  color: var(--color-of-headers);
+}
+
+.contact a {
+  color: var(--text-color);
+}
