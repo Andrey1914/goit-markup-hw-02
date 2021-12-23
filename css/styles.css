@@ -14,41 +14,64 @@ body {
   font-family: 'Roboto', 'Raleway', sans-serif;
   color: var(--color-of-headers);
 }
+/* header */
 
-.page-header {
-  display: flex;
-  justify-content: space-between;
-  width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
-}
+/* navigation */
 
-.page-header a {
-  text-decoration: none;
-}
-
-.site-nav,
-.contact,
 .logo {
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  font-family: 'Raleway', sans-serif;
+  font-style: bold;
+  font-size: 26px;
+  line-height: 31px;
+  line-height: 100%;
+  color: var(--color-of-headers);
 }
 
-.site-nav > li {
-  margin-left: 50px;
-}
-
-.contact > li {
-  margin-left: 50px;
+span {
+  color: var(--logo-color);
 }
 
 .site-nav a {
   color: var(--color-of-headers);
+  font-style: medium;
+  font-size: 14px;
+  line-height: 16px;
+  line-height: 100%;
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+  color: var(--accent-color);
+}
+
+.site-nav a:active {
+  color: var(--accent-color);
+}
+/* contact */
+
+.contact > li {
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 16px;
+  line-height: 100%;
+  margin-left: 50px;
 }
 
 .contact a {
   color: var(--text-color);
+}
+
+.contact a:hover,
+.contact a:focus {
+  color: var(--accent-color);
+}
+
+.studio:hover,
+.studio:focus {
+  color: var(--accent-color);
+}
+
+.portfolio:hover,
+.portfolio:focus {
+  color: var(--accent-color);
 }
