@@ -21,9 +21,8 @@ body {
 .footer-logo {
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.2;
   line-height: 100%;
-  vertical-align: top;
   letter-spacing: 0.03em;
   color: var(--color-of-headers);
   text-decoration: none;
@@ -41,7 +40,8 @@ span {
 .team-list,
 .contact-list,
 .buttons-list,
-.works-list {
+.works-list,
+.filter-list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -49,25 +49,21 @@ span {
 
 .site-nav a {
   color: var(--color-of-headers);
-  font-style: medium;
-  font-size: 14px;
+}
+
+.site-nav a,
+.contact a {
+  font-style: Medium;
   font-weight: 500;
-  line-height: 16px;
+  font-size: 14px;
+  line-height: 1.1;
   line-height: 100%;
-  vertical-align: top;
   letter-spacing: 0.02em;
   text-decoration: none;
 }
 
 /* contact */
 .contact a {
-  font-style: Medium;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 16px;
-  line-height: 100%;
-  letter-spacing: 0.02em;
-  text-decoration: none;
   color: var(--text-color);
 }
 
@@ -75,18 +71,21 @@ span {
 .hero-title {
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.4;
   letter-spacing: 0.06em;
   margin: 0;
 }
 
 .button {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.9;
   letter-spacing: 0.06em;
+  color: #ffffff;
   width: 200px;
   height: 50px;
   left: 700px;
   top: 430px;
-  color: #ffffff;
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -98,7 +97,7 @@ span {
 .experience-title {
   font-weight: bold;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.1;
   letter-spacing: 0.03em;
   color: var(--color-of-headers);
   margin: 0;
@@ -106,46 +105,38 @@ span {
 
 .experience-text {
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--text-color);
   margin: 0;
 }
 
 /* activity */
-.activity-title {
+.activity-title,
+.team-header {
   font-weight: bold;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--color-of-headers);
   margin: 0;
 }
 
 /* our team */
-.team-header {
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 42px;
+.employee,
+.speciality {
+  font-size: 16px;
+  line-height: 1.2;
   letter-spacing: 0.03em;
-  color: var(--color-of-headers);
   margin: 0;
 }
 
 .employee {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 0.03em;
-  margin: 0;
   color: var(--color-of-headers);
 }
 
 .speciality {
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 0.03em;
-  margin: 0;
   color: var(--text-color);
 }
 
@@ -160,22 +151,26 @@ span {
 
 .contact-list a {
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.7;
   letter-spacing: 0.03em;
   text-decoration: none;
 }
 
 .logo:hover,
 .logo:focus,
+.logo:active,
 .footer-logo:focus,
 .footer-logo:hover,
+.footer-logo:active,
 .site-nav a:hover,
 .site-nav a:focus,
+.site-nav a:active,
 .contact a:hover,
 .contact a:focus,
+.contact :active,
 .contact-list a:hover,
 .contact-list a:focus,
-.button:focus {
+.contact-list:active {
   color: var(--accent-color);
 }
 
@@ -194,10 +189,15 @@ span {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.completed-work {
+  visibility: hidden;
+  margin: 0;
+}
+
 .works-title {
   font-weight: bold;
   font-size: 18px;
-  line-height: 36px;
+  line-height: 2;
   letter-spacing: 0.06em;
   margin: 0;
   color: var(--color-of-headers);
@@ -205,27 +205,33 @@ span {
 
 .text {
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.9;
   letter-spacing: 0.03em;
   margin: 0;
   color: var(--text-color);
 }
 
-.buttons-list li {
+.filter {
   font-weight: 500;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 1.6;
   letter-spacing: 0.03em;
   color: var(--color-of-headers);
-}
-
-.buttons-list .button {
-  width: 103px;
+  background: #f5f4fa;
+  border: none;
+  width: 130px;
   height: 38px;
   left: 865px;
   top: 174px;
-  background: #f5f4fa;
   border-radius: 4px;
   margin-bottom: 10px;
   box-shadow: none;
+  cursor: pointer;
+}
+
+.filter:hover,
+.filter:focus,
+.filter:active {
+  color: #ffffff;
+  background-color: var(--accent-color);
 }
