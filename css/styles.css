@@ -174,7 +174,8 @@ span {
 .contact a:hover,
 .contact a:focus,
 .contact-list a:hover,
-.contact-list a:focus {
+.contact-list a:focus,
+.button:focus {
   color: var(--accent-color);
 }
 
@@ -208,4 +209,23 @@ span {
   letter-spacing: 0.03em;
   margin: 0;
   color: var(--text-color);
+}
+
+.buttons-list li {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+  color: var(--color-of-headers);
+}
+
+.buttons-list .button {
+  width: 103px;
+  height: 38px;
+  left: 865px;
+  top: 174px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  box-shadow: none;
 }
